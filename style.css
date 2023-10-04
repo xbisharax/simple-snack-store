@@ -1,0 +1,55 @@
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1em;
+/*background-color: #f8f8f8;*/
+
+color: mediumblue;
+background-color: azure;
+
+font-family: serif;
+font-style: italic;
+font-size: 24pt;
+
+text-align: center;
+
+border:1px solid #cccccc;
+padding: inherit;
+margin: inherit;
+}
+
+nav {
+display: flex;
+}
+
+nav ul {
+list-style-type: none;
+}
+
+nav li {
+margin: 0 1em;
+}
+
+main {
+padding: 1em;
+}
+
+footer {
+text-align: center;
+padding: 1em;
+background-color: #f8f8f8;
+}
+
+h4 {
+    color: aliceblue;
+    background-color: darkblue;
+    text-align: center;
+}
+
+p, div, button {
+    color: darkslateblue;
+    font-family: monospace;
+    font-style: oblique;
+    font-size: 12pt;
+}

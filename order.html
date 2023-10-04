@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assorted Snack Store - Order Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="mix-logo.png" width="100" height="60" alt="My Company Logo">
+            <h1>Assorted Snack Store</h1>
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h4>Order Form</h4>
+            <form id="order-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <option value="">--Select--</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select><br>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" required><br><br>
+
+            <p>Please select an amount for each item:</p>
+            <label for="product1">Rice Crackers:</label>
+            <input type="number" id="product1" name="product1" min="0"><br>
+
+            <label for="product2">Bubble Tea:</label>
+            <input type="number" id="product2" name="product2" min="0"><br>
+
+            <label for="product3">Off-brand Chips:</label>
+            <input type="number" id="product3" name="product3" min="0"><br><br>
+
+            <p>Choose a shipping type:</p>
+            <label>
+            <input type="radio" name="shipping" id="overnight" value="overnight">
+            Overnight - $25.00
+            </label>
+
+            <label>
+            <input type="radio" name="shipping" id="twoday" value="twoday">
+            2-Day - $15.00
+            </label>
+              
+            <label>
+            <input type="radio" name="shipping" id="standard" value="standard" checked>
+            Standard - $5.00
+            </label><br><br>
+            
+            <p>Submit the order to see what's owed:</p>
+            <label for="subtotal">Subtotal:</label>
+            <input type="number" id="subtotal" name="subtotal" readonly><br>
+
+            <label for="tax">Tax:</label>
+            <input type="number" id="tax" name="tax" readonly><br>
+
+            <label for="total">Total:</label>
+            <input type="number" id="total" name="total" readonly><br>
+
+            <button type="submit">Submit Order</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; Bishara Said | EKU | CSC 160 Final Project</p>
+        </footer>
+
+        <script src="order.js"></script>
+    </body>
+</html>
